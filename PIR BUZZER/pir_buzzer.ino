@@ -8,7 +8,7 @@ int ledPin2 = 12;
 int ledPin3 = 11;
 int ledPin4 = 10;
 
-int buzzerPin = 9; // Connect buzzer's + pin to D9, - pin to GND
+int buzzerPin = 9; 
 
 void setup() {
   pinMode(pirPin1, INPUT);
@@ -36,7 +36,6 @@ void loop() {
   digitalWrite(ledPin3, motion3);
   digitalWrite(ledPin4, motion4);
 
-  // If any motion is detected, turn buzzer ON
   if (motion1 == HIGH || motion2 == HIGH || motion3 == HIGH || motion4 == HIGH) {
     digitalWrite(buzzerPin, HIGH);
   } else {
